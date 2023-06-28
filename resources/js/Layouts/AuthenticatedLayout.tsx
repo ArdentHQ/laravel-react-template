@@ -1,10 +1,10 @@
-import { Method } from "@inertiajs/core";
-import { Link } from "@inertiajs/react";
-import { useState } from "react";
 import ApplicationLogo from "@/Components/ApplicationLogo";
 import Dropdown from "@/Components/Dropdown";
+import { Link } from "@inertiajs/react";
+import { Method } from "@inertiajs/core";
 import NavLink from "@/Components/NavLink";
 import ResponsiveNavLink from "@/Components/ResponsiveNavLink";
+import { useState } from "react";
 
 /* eslint-disable @typescript-eslint/strict-boolean-expressions */
 interface Properties {
@@ -67,7 +67,6 @@ export default function Authenticated({ auth, header, children }: Properties): J
                                     </Dropdown.Trigger>
 
                                     <Dropdown.Content>
-                                        <Dropdown.Link href={route("profile.edit")}>Profile</Dropdown.Link>
                                         <Dropdown.Link
                                             href={route("logout")}
                                             method={Method.POST}
@@ -130,7 +129,6 @@ export default function Authenticated({ auth, header, children }: Properties): J
                         </div>
 
                         <div className="mt-3 space-y-1">
-                            <ResponsiveNavLink href={route("profile.edit")}>Profile</ResponsiveNavLink>
                             <ResponsiveNavLink
                                 method={Method.POST}
                                 href={route("logout")}

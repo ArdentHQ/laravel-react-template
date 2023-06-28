@@ -31,4 +31,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'alchemy' => [
+        'api_key' => env('ALCHEMY_API_KEY'),
+        'api_uri' => env('ALCHEMY_API_URI', 'https://eth-mainnet.g.alchemy.com/nft/v2'),
+    ],
+
 ];

@@ -15,6 +15,14 @@ module.exports = {
                 sans: ["Lato", ...defaultTheme.fontFamily.sans],
             },
         },
+        screens: {
+            xs: "320px",
+            sm: "640px",
+            md: "768px",
+            lg: "960px",
+            xl: "1024px",
+            "2xl": "1280px",
+        },
     },
 
     plugins: [require("@tailwindcss/forms")],

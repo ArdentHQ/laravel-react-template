@@ -32,6 +32,7 @@ export interface MetaMaskState {
     needsMetaMask: boolean;
     supportsMetaMask: boolean;
     errorMessage?: string;
+    logout: () => Promise<void>;
 }
 
 enum ErrorType {
@@ -212,6 +213,7 @@ const useMetaMask = (): MetaMaskState => {
         needsMetaMask,
         supportsMetaMask,
         errorMessage,
+        logout,
     };
 };
 
